@@ -120,6 +120,90 @@ export const CalendarIcon = (props) => (
     </Icon>
 );
 
+export const HomeIcon = (props) => (
+    <Icon {...props}>
+        <path d="M3 10.5 12 3l9 7.5" />
+        <path d="M5 9v11a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9" />
+    </Icon>
+);
+
+export const BoltIcon = (props) => (
+    <Icon {...props}>
+        <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />
+    </Icon>
+);
+
+export const UserIcon = (props) => (
+    <Icon {...props}>
+        <circle cx="12" cy="8" r="4" />
+        <path d="M4 21a8 8 0 0 1 16 0" />
+    </Icon>
+);
+
+export const ShieldIcon = (props) => (
+    <Icon {...props}>
+        <path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3Z" />
+        <path d="m9 12 2 2 4-4" />
+    </Icon>
+);
+
+export const SettingsIcon = (props) => (
+    <Icon {...props}>
+        <circle cx="12" cy="12" r="3" />
+        <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z" />
+    </Icon>
+);
+
+export const BellIcon = (props) => (
+    <Icon {...props}>
+        <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+        <path d="M10.3 21a1.9 1.9 0 0 0 3.4 0" />
+    </Icon>
+);
+
+export const SearchIcon = (props) => (
+    <Icon {...props}>
+        <circle cx="11" cy="11" r="7" />
+        <path d="m20 20-3.5-3.5" />
+    </Icon>
+);
+
+export const ChevronDownIcon = (props) => (
+    <Icon {...props}>
+        <path d="m6 9 6 6 6-6" />
+    </Icon>
+);
+
+export const ChevronRightIcon = (props) => (
+    <Icon {...props}>
+        <path d="m9 6 6 6-6 6" />
+    </Icon>
+);
+
+export const ChevronLeftIcon = (props) => (
+    <Icon {...props}>
+        <path d="m15 6-6 6 6 6" />
+    </Icon>
+);
+
+export const PlusIcon = (props) => (
+    <Icon {...props}>
+        <path d="M12 5v14M5 12h14" />
+    </Icon>
+);
+
+export const FilterIcon = (props) => (
+    <Icon {...props}>
+        <path d="M3 5h18l-7 8.5V19l-4 2v-7.5L3 5Z" />
+    </Icon>
+);
+
+export const LogOutIcon = (props) => (
+    <Icon {...props}>
+        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+    </Icon>
+);
+
 export const BarChartIcon = (props) => (
     <Icon {...props}>
         <path d="M6 20v-6M11 20V9M16 20v-9M21 20V4" />

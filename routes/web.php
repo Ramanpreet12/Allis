@@ -18,4 +18,9 @@ Route::inertia('/reset-password', 'Auth/ResetPassword')->name('password.reset');
 // Landing page after login.
 Route::inertia('/workspaces', 'ChooseWorkspace')->name('workspaces');
 
+Route::prefix('london-law')->name('london-law.')->group(function () {
+    Route::inertia('/', 'LondonLawWorkspace/Dashboard')->name('dashboard');
+    Route::inertia('/jobs', 'LondonLawWorkspace/Jobs/Index')->name('jobs.index');
+});
+
 
