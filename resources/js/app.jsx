@@ -7,9 +7,18 @@ const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 createInertiaApp({
     title: (title) => (title ? `${title} - ${appName}` : appName),
     resolve: (name) => {
-        const pages = import.meta.glob('./Pages/**/*.jsx', { eager: true });
+        const pages = import.meta.glob(
+            ['./Pages/**/*.jsx', './*Workspace/Pages/**/*.jsx'],
+            { eager: true },
+        );
 
-        return pages[`./Pages/${name}.jsx`];
+        // Workspace pages are addressed as "LondonLawWorkspace/Auth/Login".
+        const [workspace, ...rest] = name.split('/');
+
+        return (
+            pages[`./Pages/${name}.jsx`] ??
+            pages[`./${workspace}/Pages/${rest.join('/')}.jsx`]
+        );
     },
     setup({ el, App, props }) {
         createRoot(el).render(<App {...props} />);

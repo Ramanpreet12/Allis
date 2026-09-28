@@ -15,6 +15,10 @@ export default defineConfig({
                     weights: [400, 500, 600],
                     optimizedFallbacks: false,
                 }),
+                bunny('Source Serif 4', {
+                    weights: [600, 700],
+                    optimizedFallbacks: false,
+                }),
             ],
         }),
         react(),
